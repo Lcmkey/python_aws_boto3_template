@@ -8,7 +8,7 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./DynamoDB/templates")
 
 ACCESS_KEY_ID = os.environ.get("ACCESS_KEY_ID")
 ACCESS_SECRET_KEY = os.environ.get("ACCESS_SECRET_KEY")
