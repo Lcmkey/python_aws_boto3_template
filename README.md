@@ -14,18 +14,22 @@
 
     # Rds
     RDS_ENDPOINT=
+    DB_IDENTIFIER=rds_demo_sam
     RDS_DN_PORT=3306
     RDS_DB_USER=
     RDS_DB_PASSWORD=
     RDS_DB_NAME=rds_demo_sam
     RDS_SG_ID=
 
+    # S3
+    S3_BUCKET_NAME=boto3-bucket-demo-sam
+
    ```
 
 2. Create DynamoDB Table
 
    ```properties
-   $ python3 dynamoDB_create_table.py create_hashKey_table
+   $ python3 ./DynamoDB/dynamoDB_create_table.py create_hashKey_table
    ```
 
    Event Actions:
@@ -38,7 +42,7 @@
 3. Execute User Event
 
    ```properties
-   $ python3 dynamoDB_events.py create_user get_user update_user get_user
+   $ python3 ./DynamoDB/dynamoDB_events.py create_user get_user update_user get_user
    ```
 
    Event Action:
@@ -65,13 +69,13 @@
 2. Create Mysql Instance
 
    ```properties
-   $ python3 rds_create_instance.py
+   $ python3 ./RDS/rds_create_instance.py
    ```
 
 3. Test Events
 
    ```properties
-   $ python3 rds_db_events.py create_table insert_details get_details
+   $ python3 ./RDS/rds_db_events.py create_table insert_details get_details
    ```
 
    Event Action:
@@ -79,3 +83,19 @@
    - create_table
    - insert_details
    - get_details
+
+# S3 - How to run
+
+1. Create .env in project root directory as DynamoDB Stes 1
+
+2. Create S3 Bucket
+  ```properties
+  $ python3 ./S3/S3_bucket.py create_bucket
+  ```
+2. Run Application
+
+   ```properties
+   $ python3 app_s3.py
+   ```
+
+3. Browse http://127.0.0.1:5000/ && upload your file

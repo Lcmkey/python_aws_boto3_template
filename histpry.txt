@@ -1,0 +1,772 @@
+   48  sudo apt-get install \\n    apt-transport-https \\n    ca-certificates \\n    curl \\n    gnupg-agent \\n    software-properties-common
+   49  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  325  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\n\n
+  327  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\n\n
+  328  sh -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\n\n
+  348  curl -sL https://deb.nodesource.com/setup_8.1.2 | sudo -E bash -
+  349  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+  363  sudo apt-get install php-curl
+  636  curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+ 1141  curl -X POST http://localhost:4000/api/logs
+ 1163  curl https://docs.google.com/spreadsheets/d/1TON50o0pGDVO6Dcp48oFb-ht1gX-pWvZRcGsFm6Brtc/htmlview\?fbclid\=IwAR3zrwfe-vQWMTK230Q3TBJME6-0gd9ZTIRwgNyem7avlAlIEqAkynZuUTo\&sle\=true
+ 1277  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+ 1279  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/bin/youtube-dl
+ 1381  deno run \\nhttps://deno.land/std/examples/curl.ts \\nhttps://example.com
+ 1383  deno run --allow-net \\nhttps://deno.land/std/examples/curl.ts \\nhttps://example.com
+ 2024  curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
+ 2054  curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.0
+ 2056  curl -fsSL https://deno.land/x/install/install.sh | sh
+ 2059  curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.0.2
+ 2065  curl https://deno.land/std/examples/welcome.ts
+ 2087  curl -O https://storage.googleapis.com/golang/go1.12.9.linux-amd64.tar.gz
+ 2108  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+ 2109  curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
+ 2114  curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.1.0/bin/linux/amd64/kubectl
+ 2115  curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.17.0/bin/linux/amd64/kubectl
+ 2205  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://locahost:8000/register
+ 2206  curl http://localhost8000/login
+ 2207  curl --request POST http://localhost8000/login
+ 2208  curl --request POST http://localhost8000
+ 2209  curl --request GET http://localhost8000
+ 2210  curl http://localhost:8000
+ 2211  curl -I http://localhost:8000
+ 2212  curl --request GET http://localhost:8000
+ 2213  curl --H "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login
+ 2214  curl -H "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login
+ 2215  curl -H "Content-Type: application/json" \\n--request POST \\n--d '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login
+ 2216  curl -H "Content-Type: application/json" \\n--request POST \\n-d '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login
+ 2217  curl -H "Content-Type: application/json" --request POST -d '{"login": "test", "password": "123"}' http://localhost:8000/login
+ 2218  curl -H "Content-Type: application/json" --request POST -d '{"login": "test", "password": "123"}' http://localhost:8000/register
+ 2220  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/register\n
+ 2221  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login
+ 2222  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "1234"}' \\nhttp://localhost:8000/login
+ 2223  curl --header "Content-Type: application/json" \\n--header "Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InRlc3QifQ.LItGhEtlLYH80k3KyL21J_ZkpDdy3JTyl2z43cWbTl8"\nhttp://localhost:8000/protected
+ 2224  curl --header "Content-Type: application/json" \\n--header "Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InRlc3QifQ.LItGhEtlLYH80k3KyL21J_ZkpDdy3JTyl2z43cWbTl8" \\nhttp://localhost:8000/protected
+ 2225  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/login\n
+ 2226  curl --header "Content-Type: application/json" \\n--header "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InRlc3QifQ.LItGhEtlLYH80k3KyL21J_ZkpDdy3JTyl2z43cWbTl8" \\nhttp://localhost:8000/protected
+ 2227  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test1", "password": "123"}' \\nhttp://localhost:8000/register
+ 2228  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test1", "password": "123"}' \\nhttp://localhost:8000/login\n
+ 2377  curl -h "Content-Type: application/json"\\n--request POST -d '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2378  curl --header "Content-Type: application/json"\\n--request POST --data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2379  curl --header "Content-Type: application/json" \\n--request POST \\n--data '{"login": "test", "password": "123"}' \\nhttp://localhost:8000/register
+ 2380  curl --header "Content-Type: application/json"\ --request POST \\n--data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2381  curl -H "Content-Type: application/json"\ --request POST \\n--data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2382  curl -H "Content-Type:application/json"\ --request POST \\n--data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2383  curl -H "Content-Type: application/json" --request POST \\n--data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱‍👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes
+ 2384  curl -H "Content-Type: application/json" --request POST \\n--data '{ "title": "Some Random Title", "desc": "Pick delicious emoji", "ingredients": ["🐱<200d>👤", "selfie", "clap"] }' \\nhttp://localhost:8000/recipes\n
+ 2441  curl $(minikube service hello-minikube --url)
+ 2496  curl $(minikube service my-pod-service --url)
+ 2577  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+ 2588  curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+ 2603  curl -d '{"type":"deno","rounds":46341}' -H "Content-Type: application/json" http://localhost:8000/api
+ 2607  curl -d '{"type":"deno","rounds":46340}' -H "Content-Type: application/json" http://localhost:8000/api
+ 2608  curl -d '{"type":"rust","rounds":46340}' -H "Content-Type: application/json" http://localhost:8000/api
+ 2609  curl -d '{"type":"deno","rounds":46340}' -H 'Content-Type: application/json' http://localhost:8000/api
+ 2612  curl -d '{"type":"rust","rounds":46340}' -H 'Content-Type: application/json' http://localhost:8000/api
+ 2695  curl --request POST -d"{'hello': 'world'}" localhost
+ 2696  curl --request POST -d"{'hello': 'world'}" localhost:3000/api.test
+ 2697  curl --request POST -d"{'hello': 'world'}" localhost:3000/api/test
+ 2794  curl --request get http://localhost:8000/users
+ 2795  curl --request GET http://localhost:8000/users
+ 2796  curl --request POST  -d "{'user': {'name': 'sam.leung', 'age': 18}}"  http://localhost:8000/users
+ 2797  curl --request GET  -d "{'user': {'name': 'sam.leung', 'age': 18}}"  http://localhost:8000/users
+ 2798  curl --request POST  -d "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2799  curl --request POST  --data "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2800  curl -X POST  --data "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2801  curl -H "Content-Type:application/json" --request POST
+ 2802  curl -H "Content-Type: application/json" -X POST --data "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2803  curl -H "Content-Type:application/json" -X POST --data "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2804  curl -H "Content-Type: application/json" -X POST -d "{'name': 'sam.leung', 'age': 18}"  http://localhost:8000/users
+ 2806  curl -X get http://localhost:8000/5ed6c58c00a4509200d6feeb
+ 2807  curl -X GET http://localhost:8000/5ed6c58c00a4509200d6feeb
+ 2808  curl -X GET http://localhost:8000/users/5ed6c58c00a4509200d6feeb
+ 2809  curl -X GET http://localhost:8000/users/5ed6c58c00a4509200d6feeb | json
+ 2810  curl -X GET http://localhost:8000/users/5ed6c58c00a4509200d6feeb | jq
+ 2811  curl -H "Content-Type: application/json" -X POST -d '{"name": "sam.leung", "age": 18}'  http://localhost:8000/users
+ 2812  curl -H "Content-Type: application/json" -X POST -d '{"id":1,"name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","suite":"Apt. 556","city":"Gwenborough","zipcode":"92998-3874","geo":{"lat":"-37.3159","lng":"81.1496"}},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona","catchPhrase":"Multi-layered client-server neural-net","bs":"harness real-time e-markets"}}'  http://localhost:8000/users
+ 2813  curl -X GET http://localhost:8000/users
+ 2814  curl -H "Content-Type: application/json" -X POST -d '{"name": 11, "age": 18}'  http://localhost:8000/users
+ 2815  :> curl.md
+ 2816  curl -H "Content-Type: application/json" -X POST -d '{"name": 11, "age": 18}'  -# http://localhost:8000/users
+ 2818  curl -# -X GET http://localhost:8000/users | jq
+ 2819  curl -X GET http://localhost:8000/users | jq
+ 2821  git commit -m "curl md init"
+ 2827  curl -X GET localhost:8000
+ 2984  curl -LO https://github.com/kubernetes/kops/releases/download/$\(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
+ 2985  curl -Lo kops https://github.com/kubernetes/kops/releases/download/$\(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
+ 2986  curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
+ 3049  curl http://downloads.drone.io/release/linux/amd64/drone.tar.gz | tar zx
+ 3068  curl -X GET /api/v1/products
+ 3069  curl -X GET localhost:5000/api/v1/products
+ 3070  curl -X GET localhost:5000/api/v1/products | hq
+ 3071  curl -X GET localhost:5000/api/v1/products | jq
+ 3103  curl -X POST -H "Content-Type: application/json" -d '{"name": "Product One", "description": "This is product one", "price": 29.99}' localhost:5000/api/v1/products | jq
+ 3104  curl -i -X POST -H "Content-Type: application/json" -d '{"name": "Product One", "description": "This is product one", "price": 29.99}' localhost:8000/api/v1/products | jq
+ 3105  curl -X POST -H "Content-Type: application/json" -d '{"name": "Product One", "description": "This is product one", "price": 39.99}' localhost:8000/api/v1/products | jq
+ 3106  curl -X POST -H "Content-Type: application/json" -d '{"name": "Product three", "description": "This is product three", "price": 99.99}' localhost:8000/api/v1/products | jq
+ 3109  curl curl -X GET localhost:5000/api/v1/products/1 | jq
+ 3110  curl -X POST -H "Content-Type: application/json" -d'{"name": "New Product", "description": "This is a new product", "price": 100.00}' localhost:5000/api/v1/products | jq
+ 3111  curl -X PUT -H "Content-Type: application/json" -d'{"name": "New Product Update", "description": "This is a new product", "price": 100.00}' localhost:5000/api/v1/products/dfe3b8da-5415-407b-822f-7df8eae79130 | jq
+ 3112  curl -X DELETE  localhost:5000/api/v1/products/dfe3b8da-5415-407b-822f-7df8eae79130 | jq
+ 3113  curl curl -X GET localhost:5000/api/v1/products | jq
+ 3115  curl curl -X GET localhost:8000/api/v1/products
+ 3116  curl curl -X GET localhost:8000/api/v1/products | jq
+ 3117  curl curl -X GET localhost:8000/api/v1/products/1 | jq
+ 3118  curl -X PUT -H "Content-Type: application/json" -d '{"name": "Product One", "description": "This is product one", "price": 29.99}' localhost:8000/api/v1/products/1 | jq
+ 3119  curl -X PUT -H "Content-Type: application/json" -d '{"name": "Product One Update", "description": "This is product one", "price": 29.99}' localhost:8000/api/v1/products/1 | jq
+ 3120  curl -X PUT -H "Content-Type: application/json" -d '{"name": "Product Two", "description": "This is product two", "price": 39.99}' localhost:8000/api/v1/products/2 | jq
+ 3121  curl -X PUT -H "Content-Type: application/json" -d '{"name": "Product Three", "description": "This is product three", "price": 99.99}' localhost:8000/api/v1/products/3 | jq
+ 3122  curl -X PUT -H "Content-Type: application/json" -d '{"name": "Product Three", "description": "This is product three", "price": 99.99}' localhost:8000/api/v1/products/4 | jq
+ 3123  curl curl -X DELETE localhost:8000/api/v1/products/3 | jq
+ 3124  curl curl -X DELETE localhost:8000/api/v1/products/2
+ 3125  curl -X DELETE localhost:8000/api/v1/products/2
+ 3126  curl -X DELETE localhost:8000/api/v1/products/1 | jq
+ 3127  curl -X GET localhost:8000/api/v1/products/3 | jq
+ 3128  curl -X GET localhost:8000/api/v1/products/4 | jq
+ 3129  curl -X DELETE localhost:8000/api/v1/products/4
+ 3130  curl -X DELETE localhost:8000/api/v1/products/4 | jq
+ 3131  curl -X DELETE localhost:8000/api/v1/products/6
+ 3132  curl -X POST -H "Content-Type: application/json" -d '{"name": "Product One", "description": "This is product one", "price": 29.99}' localhost:8000/api/v1/products | jq
+ 3133  curl -X DELETE localhost:8000/api/v1/products/5
+ 3134  curl -X DELETE localhost:8000/api/v1/products/7
+ 3135  curl -X DELETE localhost:8000/api/v1/products/7 | jq
+ 3394  curl https://opentdb.com/api_category.php"\n;
+ 3395  curl https://opentdb.com/api_category.php\n;
+ 3396  curl https://opentdb.com/api_category.php;
+ 3397  curl https://opentdb.com/api_category.php | jq
+ 3398  curl https://opentdb.com/api.php | jq
+ 3399  curl -X POST -H "Content-Type: application/json" https://opentdb.com/api.php -d '{"amount": 10, "category": "Animals"}'| jq
+ 3400  curl -X GET -H "Content-Type: application/json" https://opentdb.com/api.php -d '{"amount": 10, "category": "Animals"}' | jq
+ 3401  curl -X GET https://opentdb.com/api.php -d '?amount=10&category=Animals"' | jq
+ 3402  curl -X GET https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3404  curl -v -L -G -d https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3405  curl -v -L -G https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3406  curl -v -L https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3407  curl https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3408  curl -v https://opentdb.com/api.php -d 'amount=10&category=Animals"' | jq
+ 3409  curl -v https://opentdb.com/api.php -d 'amount=10&category=Animals' | jq
+ 3410  curl -v -h https://opentdb.com/api.php -d 'amount=10&category=9' | jq
+ 3411  curl -v https://opentdb.com/api.php -d 'amount=10&category=9' | jq
+ 3412  curl https://opentdb.com/api.php -d 'amount=10&category=9' | jq
+ 3413  curl https://opentdb.com/api.php\?amount=10&category=9 | jq
+ 3414  curl https://opentdb.com/api.php\?amount=10&category=9 | jq | jq
+ 3415  curl https://opentdb.com/api.php\?amount=10&category=9
+ 3416  curl 'https://opentdb.com/api.php\?amount=10&category=9' | jq
+ 3417  curl -i https://opentdb.com/api.php\ --data-urlencode 'amount=10&category=9' | jq
+ 3418  curl -i https://opentdb.com/api.php -d 'amount=10' -d 'category=9'
+ 3419  curl https://opentdb.com/api.php -d 'amount=10' -d 'category=9'
+ 3420  curl -v -i https://opentdb.com/api.php -d 'amount=10' -d 'category=9'
+ 3421  curl -F -i https://opentdb.com/api.php -d 'amount=10' -d 'category=9'
+ 3422  curl -G -i https://opentdb.com/api.php -d 'amount=10' -d 'category=9'
+ 3423  curl -G -i https://opentdb.com/api.php -d 'amount=10' -d 'category=9' | jq
+ 3472  curl https://uf3x99d8l3.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung | jq
+ 3506  curl https://uf3x99d8l3.execute-api.ap-southeast-1.amazonaws.com/prod/
+ 3513  curl https://uf3x99d8l3.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung
+ 3514  curl https://1dqp8j0leb.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung
+ 3515  curl https://tpt6e1tvtg.execute-api.ap-southeast-1.amazonaws.com/prod//sam.leung
+ 3516  curl https://tpt6e1tvtg.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung
+ 3517  time curl https://tpt6e1tvtg.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung
+ 3518  time curl -v https://tpt6e1tvtg.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung
+ 3519  time curl -v https://tpt6e1tvtg.execute-api.ap-southeast-1.amazonaws.com/prod/sam.leung | jq
+ 3520  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs' https://oweak5ok26.execute-api.ap-southeast-1.amazonaws.com/prod/api
+ 3521  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs9a' https://oweak5ok26.execute-api.ap-southeast-1.amazonaws.com/prod/api
+ 3522  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs9' https://oweak5ok26.execute-api.ap-southeast-1.amazonaws.com/prod/api
+ 3523  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs9' https://oweak5ok26.execute-api.ap-southeast-1.amazonaws.com/prod/apicode .
+ 3524  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs9' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/apicode .
+ 3525  curl -H "Content-Type: application/json" -H 'x-api-key: I7ox21Smtn4lAJakUXeZu1nmEAW0qYip4rMHPEs9' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/test .
+ 3526  curl -H "Content-Type: application/json" -H 'x-api-key: \nvC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/test .
+ 3527  curl -H "Content-Type: application/json" -H 'x-api-key: vC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/test
+ 3528  curl -H "Content-Type: application/json" -H 'x-api-key: vC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/api/sam.leung
+ 3529  curl -X GET -H "Content-Type: application/json" -H 'x-api-key: vC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/api/sam.leung
+ 3531  curl -X GET https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/api
+ 3532  curl -X GET -H "Content-Type: application/json" -H 'x-api-key: vC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://eblidsikac.execute-api.ap-southeast-1.amazonaws.com/dev/api
+ 3533  curl -X GET -H "Content-Type: application/json" -H 'x-api-key: vC55hv4LLT1QqtW4TWaI94uCJv3rclNr69EK9unJ' https://q9d5l30192.execute-api.ap-southeast-1.amazonaws.com/dev/api
+ 3534  curl -X GET -H "Content-Type: application/json" -H 'x-api-key: a6IAn2XT6Q68XZrcFzr7H6IYXHZdzNCe9UiEHLMy' https://q9d5l30192.execute-api.ap-southeast-1.amazonaws.com/dev/api
+ 3535  curl -X GET -H "Content-Type: application/json" -H 'x-api-key: a6IAn2XT6Q68XZrcFzr7H6IYXHZdzNCe9UiEHLMy' https://q9d5l30192.execute-api.ap-southeast-1.amazonaws.com/dev/api | jq
+ 3538  curl -v -X GET -H "Content-Type: application/json" -H 'x-api-key: a6IAn2XT6Q68XZrcFzr7H6IYXHZdzNCe9UiEHLMy' https://q9d5l30192.execute-api.ap-southeast-1.amazonaws.com/dev/api | jq
+ 3539  curl -v -X GET -H "Content-Type: application/json" -H 'x-api-key: a6IAn2XT6Q68XZrcFzr7H6IYXHZdzNCe9UiEHLMy' https://e5r5pxinia.execute-api.ap-southeast-1.amazonaws.com/dev/api | jq
+ 3540  curl -v -X GET -H "Content-Type: application/json" -H 'x-api-key: cpMzgkoU4J5fO6PILOWKa8jPRITpAFphaSU11ur3' https://e5r5pxinia.execute-api.ap-southeast-1.amazonaws.com/dev/api | jq
+ 3603  curl localhost:5000/123
+ 3604  curl localhost:5000/123 | jq
+ 3613  curl http://localhost:5000/
+ 3614  curl http://localhost:5000/users/ | jq
+ 3618  curl http://localhost:5050/api/v1/states/ | jq
+ 3624  curl http://localhost:5050/api/v1/users/ | jq
+ 3625  curl http://localhost:5000/api/v1/states/ | jq
+ 3626  curl http://localhost:5000/api/v1/states/407 | jq
+ 3687  curl -sL https://firebase.tools | bash
+ 3744  curl http://localhost:5000/ | jq
+ 3748  curl http://localhost:5000/api/v1/states/408 | jq
+ 3756  curl http://localhost:5000/api/v1/users/ | jq
+ 3757  curl http://localhost:5000/api/v1/users/2
+ 3758  curl http://localhost:5000/api/v1/users/1
+ 3759  curl -v -I http://localhost:5000/api/v1/users/2 | jq
+ 3760  curl -I http://localhost:5000/api/v1/users/2 | jq
+ 3761  curl -I http://localhost:5000/api/v1/users/2
+ 3762  curl -v http://localhost:5000/api/v1/users/2
+ 3763  curl -i http://localhost:5000/api/v1/users/2
+ 3764  curl -i http://localhost:5000/api/v1/users/1 | jq
+ 3766  curl -X POST -H "Content-Type: application/json" -d '{"user": {"email": "sam.leung@test.com"}}' http://localhost:5000/api/v1/users | jq
+ 3767  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com"}' http://localhost:5000/api/v1/users | jq
+ 3769  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/users | jq
+ 3771  curl http://localhost:5000/api/v1/contry | jq
+ 3772  curl -X POST -H "Content-Type: json/application" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/signup | jq
+ 3773  curl -X POST -H "Content-Type: json/application" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3774  curl -X POST -h "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3775  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3776  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "Ab12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3777  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "name": "sam.leung", "password": "Ab_12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3778  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "name": "sam.leung", "password": "Ab12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3786  curl -vhttp://localhost:5000/api/v1/users
+ 3787  curl -v _X OPTION http://localhost:5000/api/v1/users
+ 3788  curl -v _X OPTIONS http://localhost:5000/api/v1/users
+ 3789  curl -v -X OPTIONS http://localhost:5000/api/v1/users
+ 3790  curl -v http://localhost:5000/api/v1/users
+ 3791  curl http://localhost:4000/api/v1/users
+ 3792  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/users | jq
+ 3793  curl -X POST http://localhost:5000/api/v1/users | jq
+ 3794  curl -X POST http://localhost:5000/api/v1/states | jq
+ 3795  curl -X POST http://localhost:5000/api/v1/state | jq
+ 3796  curl http://localhost:5000/api/v1/state | jq
+ 3810  curl http://localhost:5000/api/v1/states | jq
+ 3811  curl-v http://localhost:5000/api/v1/users/2 | jq
+ 3812  curl -v http://localhost:5000/api/v1/users/2 | jq
+ 3813  curl http://localhost:5000/api/v1/states/50 | jq
+ 3814  curl http://localhost:5000/api/v1/states/501 | jq
+ 3815  curl http://localhost:5000/api/v1/states/2 | jq
+ 3816  curl http://localhost:5000/api/v1/states/211 | jq
+ 3817  curl http://localhost:5000/api/v1/users/1 | jq
+ 3818  curl http://localhost:5000/api/v1/states/1 | jq
+ 3819  curl http://localhost:5000/api/v1/states/111 | jq
+ 3820  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "name": "sam.leung", "password": "12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3824  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung01@test.com", "password": "Ab_12345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3831  curl http://localhost:5000/api/v1/users
+ 3832  curl -H '{Content-Type: application/json}' -H"'hello': 'world'"  http://localhost:5000/api/v1/users | jq
+ 3833  curl -H '{Content-Type: application/text}' -H"'hello': 'world'"  http://localhost:5000/api/v1/users | jq
+ 3834  curl -H "hello: world"  http://localhost:5000/api/v1/users | jq
+ 3835  curl -H 'Content-Type: application/json' -H "hello: world"  http://localhost:5000/api/v1/users | jq
+ 3837  curl -H 'Content-Type: application/json' -H "token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6InNhbS5sZXVuZyIsImVtYWlsIjoic2FtLmxldW5nMDJAdGVzdC5jb20iLCJpYXQiOjE1OTI0MDMzOTIsImV4cCI6MTU5MjQwMzQ1Mn0.x2nWUahXDGW36kRUyQUxc9EF7_hvnqjKwlqeVCF0tWY"  http://localhost:5000/api/v1/users | jq
+ 3838  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "password": "1Ab_12345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3839  curl -H 'Content-Type: application/json' -H "token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6InNhbS5sZXVuZyIsImVtYWlsIjoic2FtLmxldW5nMDJAdGVzdC5jb20iLCJpYXQiOjE1OTI0MDM2MzAsImV4cCI6MTU5MjQwNzIzMH0.syWWhr2IOt0ZR6sflo7TgdgwdaXTjITD44-AoUrArBc"  http://localhost:5000/api/v1/users | jq
+ 3840  curl -H 'Content-Type: application/json' -H "token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6InNhbS5sZXVuZyIsImVtYWlsIjoic2FtLmxldW5nMDJAdGVzdC5jb20iLCJpYXQiOjE1OTI0MDM2MzAsImV4cCI6MTU5MjQwNzIzMH0.syWWhr2IOt0ZR6sflo7TgdgwdaXTjITD44-AoUrArBc"  http://localhost:5000/api/v1/states | jq
+ 3841  curl -H 'Content-Type: application/json' -H "token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6InNhbS5sZXVuZyIsImVtYWlsIjoic2FtLmxldW5nMDJAdGVzdC5jb20iLCJpYXQiOjE1OTI0MDM2MzAsImV4cCI6MTU5MjQwNzIzMH0.syWWhr2IOt0ZR6sflo7TgdgwdaXTjITD44-AoUrArB1"  http://localhost:5000/api/v1/states | jq
+ 3844  curl http://localhost:5000/users
+ 3845  curl http://localhost:5000/users | jq
+ 3846  curl http://localhost:5000/api/v1/users | jq
+ 3849  curl http://localhost:5000/api/v1/users/3 | jq
+ 3850  curl http://localhost:5000/api/v1/users/2 | jq
+ 3852  curl -X PUT -H "Content-Type: application/json" -d '{"email": "sam.leung02update@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3853  curl -X UPDATE -H "Content-Type: application/json" -d '{"email": "sam.leung03@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/3 | jq
+ 3854  curl -X PUT -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/3 | jq
+ 3855  curl -X PUT -H "Content-Type: application/json" -d '{"email": "sam.leung03@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/3 | jq
+ 3856  curl -X PUT -H "Content-Type: application/json" -d '{"email": "sam.leung03@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3857  curl -X PUT -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "password": "12345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3858  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam"}' http://localhost:5000/api/v1/users/2 | jq
+ 3859  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}'  http://localhost:8088/api/user
+ 3860  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "12345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3861  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_112345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3862  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3863  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "password": "Ab_12345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3864  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung@test.com", "password": "Ab_112345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3865  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "password": "Ab_123456781"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3866  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "password": "Ab_12345678"}' http://localhost:5000/api/v1/auth/signin | jq
+ 3867  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_12345678"}' http://localhost:5000/api/v1/users/3 | jq
+ 3868  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_12345678"}' http://localhost:5000/api/v1/users/2 | jq
+ 3869  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_12345678", "email": "test"}' http://localhost:5000/api/v1/users/2 | jq
+ 3870  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_12345678", "email": "sam.leung02@test.com"}' http://localhost:5000/api/v1/users/2 | jq
+ 3871  curl -X PUT -H "Content-Type: application/json" -d '{"name": "sam", "password": "Ab_12345678", "email": "sam.leung03@test.com"}' http://localhost:5000/api/v1/users/2 | jq
+ 3872  curl -X POST -H "Content-Type: application/json" -d '{"email": "sam.leung02@test.com", "name": "sam.leung", "password": "Ab_12345678"}' http://localhost:5000/api/v1/auth/signup | jq
+ 3873  curl -X DELETE  http://localhost:5000/api/v1/users/2 | jq
+ 3874  curl -X DELETE  http://localhost:5000/api/v1/users/3 | jq
+ 3875  curl -X DELETE  http://localhost:5000/api/v1/users/5 | jq
+ 4055  curl localhost:8080
+ 4067  curl 127.0.0.2.8082
+ 4096  curl 127.0.0.2:8081
+ 4101  curl -v https://127.0.0.2:8082
+ 4112  curl https://127.0.0.2:8082 -f
+ 4133  curl https://ipvigilante.com/112.120.227.27
+ 4134  curl https://ipvigilante.com/112.120.227.27 | jq
+ 4135  curl -s https://ipvigilante.com/$\(curl -s https://ipinfo.io/ip\) | jq 'data.country_name'
+ 4136  curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip) | jq 'data.country_name'
+ 4137  curl -s https://ipvigilante.com/$\(curl -s https://ipinfo.io/ip\) | jq '.data.latitude, .data.longitude, .data.city_name, .data.country_name'
+ 4138  curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip) | jq '.data.country_name'
+ 4139  curl -s https://ipvigilante.com/$\/(curl -s https://ipinfo.io/ip\/) | jq '.data.latitude, .data.longitude, .data.city_name, .data.country_name'
+ 4140  curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip) | jq '.data.latitude, .data.longitude, .data.city_name, .data.country_name'
+ 4143  curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip)
+ 4148  curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip) >> test.json
+ 4155  curl ipinfo.io.ip
+ 4157  curl -k 127.0.0.2:8082
+ 4158  curl 127.0.0.2:8082
+ 4159  curl https://127.0.0.2:8082
+ 4160  curl https://127.0.0.2:8082 -k
+ 4167  curl localhost:8081
+ 4172  curl -k https://127.0.0.2:8082
+ 4191  curl https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/
+ 4192  curl -X POST https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/
+ 4193  curl https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4194  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint\?query_param_1="123"
+ 4195  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1="123"
+ 4196  curl -X POST https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4197  curl google.com
+ 4198  curl -v google.com
+ 4199  curl -v https://google.com
+ 4200  curl -X POST -H "Content-Type: application/json" -d '{"data": "test"}' https://e9mgsiopt8.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4209  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint\?query_param_1\=123
+ 4210  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://sqs.ap-southeast-1.amazonaws.com/115298227216/async_api_message_queue?query_param_1\=123
+ 4211  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://sqs.ap-southeast-1.amazonaws.com/115298227216/prod/async_api_message_queue?query_param_1\=123
+ 4212  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_api_message_queue?query_param_1\=123
+ 4213  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_api_message_queue
+ 4214  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_api_message_queue?query_param_1=123
+ 4215  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "query_param_1=123" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4216  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4217  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://pjycn2maf2.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1=123
+ 4218  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod?query_param_1=123
+ 4219  curl -v -X POST -H "Content-Type: application/x-www-form-urlencoded" https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpo
+ 4220  curl -v -X POST -H "Content-Type: application/x-www-form-urlencoded" https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4221  curl -X POST https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint\?query_param_1\=123
+ 4222  curl -X POST https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint\?query_param_1=123
+ 4223  curl -X POST https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1=123
+ 4224  curl -X POST https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4225  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4226  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "query_param_1: 123" https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint
+ 4227  curl -X POST'https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1=123'
+ 4228  curl -X POST 'https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1=123'
+ 4229  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" 'https://2p0834m6hc.execute-api.ap-southeast-1.amazonaws.com/prod/async_endpoint?query_param_1=123'
+ 4329  curl curl localhost:4000
+ 4330  curl localhost:4000/user/
+ 4331  curl localhost:4000/users
+ 4332  curl -X -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": 1234567}' localhost:4000/user/register
+ 4333  curl -X -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' localhost:4000/user/register
+ 4334  curl -X -H http://localhost:4000/user/register
+ 4335  curl -X -H "Content-Type: Application/json" http://localhost:4000/user/register
+ 4336  curl -X -H "Content-Type: application/json" http://localhost:4000/user/register
+ 4337  curl -X -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/register
+ 4338  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/login | jq
+ 4339  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/login | jq
+ 4340  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/update/
+ 4341  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/update/5efa670b002dd16000439174
+ 4342  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/register
+ 4343  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/login
+ 4344  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "1234567"}' http://localhost:4000/user/login
+ 4345  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "update@test.com", "password": "1234567"}' http://localhost:4000/user/update/5efa670b002dd16000439174
+ 4346  curl http://localhost:4000/user/users
+ 4347  curl http://localhost:4000/user/users | hq
+ 4355  curl localhost:4000/user/users | hq
+ 4357  curl -X DELETE http://localhost:4000/user/delete/5efa670b002dd16000439174
+ 4358  curl -X DELETE http://localhost:4000/user/
+ 4359  curl -X DELETE http://localhost:4000/user/123
+ 4360  curl -X DELETE http://localhost:4000/user
+ 4361  curl -X DELETE http://localhost:4000/user/delete
+ 4362  curl -X DELETE http://localhost:4000/user/delete/
+ 4363  curl -X DELETE http://localhost:4000/user/delete/1
+ 4364  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung02@test.com", "password": "12345678"}' http://localhost:4000/user/register
+ 4365  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung03@test.com", "password": "12345678"}' http://localhost:4000/user/register
+ 4366  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung04@test.com", "password": "12345678"}' http://localhost:4000/user/register
+ 4367  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/register | jq
+ 4369  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/register
+ 4370  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "1234567"}' http://localhost:4000/user/login | jq
+ 4371  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung0@test.com", "password": "1234567"}' http://localhost:4000/user/login
+ 4372  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "1234567"}' http://localhost:4000/user/login
+ 4373  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/login
+ 4374  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/login | jq
+ 4376  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4377  curl http://localhost:4000/user/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4378  curl http://localhost:4000/user/users | jq
+ 4379  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung05@test.com", "password": "12345678"}' http://localhost:4000/user/login 
+ 4380  curl http://localhost:4000/user/9d472938-d321-4a68-b494-3faf2f66a42b | jq
+ 4382  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "update@test.com"}' http://localhost:4000/user/update/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4383  curl localhost:4000/user/users | jq
+ 4384  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678update"}' http://localhost:4000/user/update/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4385  curl -X PATCH -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/update/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4386  curl -X DELETE localhost:4000/user/delete/
+ 4387  curl -X DELETE localhost:4000/user/delete/9d472938-d321-4a68-b494-3faf2f66a42b
+ 4390  curl -H "Content-Type: application/json" -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNTc3MjAwNn0.0J7GBQdOB2zOWYgdg7rNt4LIfk8LWFC9mC9rr_bqYTs" localhost:4000/user/users
+ 4391  curl -H "Content-Type: application/json" -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNTc3MjAwNn0.0J7GBQdOB2zOWYgdg7rNt4LIfk8LWFC9mC9rr_bqYTs" localhost:4000/user/acd240b4-7d4e-4791-9cea-e6e0e65052eb
+ 4392  curl localhost:4000/user/acd240b4-7d4e-4791-9cea-e6e0e65052eb
+ 4393  curl -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzMzczMzE5MX0.DakThw-5Hcf_5b_OW9BD4k6pwT2FodbArFszeu36MeI" localhost:4000/user/acd240b4-7d4e-4791-9cea-e6e0e65052eb
+ 4394  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzMzczMzE5MX0.DakThw-5Hcf_5b_OW9BD4k6pwT2FodbArFszeu36MeI" localhost:4000/user/acd240b4-7d4e-4791-9cea-e6e0e65052eb
+ 4395  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNjEzMjY5Mn0.O7fWqRIAYGJxdSniuebBRNRoMIYe6irM9ZSnDvymDNI" localhost:4000/user/acd240b4-7d4e-4791-9cea-e6e0e65052eb
+ 4396  curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNjMwNDc2MH0.BdMCVQrufo7jb0de--LTMsqZgXVFaScgZ4GqQEp50eI" localhost:4000/users/users
+ 4397  curl localhost:4000/users/users
+ 4398  curl localhost:4000/user/users
+ 4399  curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNjMwNDc2MH0.BdMCVQrufo7jb0de--LTMsqZgXVFaScgZ4GqQEp50eI" localhost:4000/user/users
+ 4400  curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNjQ5ODEwOH0.pL-bE5xlFw7VSJO78RcZ81hV6ncq1AQ2tqIThBBLtXI" localhost:4000/user/users
+ 4401  curl -X POST -H "Content-Type: application/json" -d '"username": "max", "password": "max"' localhost:8000/login
+ 4402  curl -X POST -H "Content-Type: application/json" -d '{"username": "max", "password": "max"}' localhost:8000/login
+ 4403  curl -H "Authentication: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtYXgiLCJleHAiOjE1OTM1Mzc1MDg5Mjd9.QecYDKRTLeEf5XqGsJw4fPWXeWBezcgneqgtAS7c3Uo" localhost:8000/auth
+ 4404  curl -H "Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtYXgiLCJleHAiOjE1OTM1Mzc1MDg5Mjd9.QecYDKRTLeEf5XqGsJw4fPWXeWBezcgneqgtAS7c3Uo" localhost:8000/auth
+ 4405  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtYXgiLCJleHAiOjE1OTM1Mzc1MDg5Mjd9.QecYDKRTLeEf5XqGsJw4fPWXeWBezcgneqgtAS7c3Uo" localhost:8000/auth
+ 4406  curl -X POST -H "Authorization:: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNzY2NTQyNn0.uDhGtpPIAGypoyxGlBu6q_Uya1LEX3khb3MsjrXdBuc" http://localhost:4000/user/all
+ 4407  curl -X GET http://localhost:4000/user/all
+ 4409  curl http://localhost:4000/user/all
+ 4410  curl -X GET -H "Authorization:: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNzY2NTQyNn0.uDhGtpPIAGypoyxGlBu6q_Uya1LEX3khb3MsjrXdBuc" http://localhost:4000/user/all
+ 4411  curl -X GET -H "Authorization:: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzUzNzY2NTQyNn0.uDhGtpPIAGypoyxGlBu6q_Uya1LEX3khb3MsjrXdBu1c" http://localhost:4000/user/all
+ 4414  curl http://localhost:8081/generate
+ 4415  curl -d '{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkdW1teV9pc3N1ZXIiLCJleHAiOjE1OTM1ODQ5MTE5OTN9.C6SpJjIrXr0ZRkecFy9Nt32X3dZ88yZDPjUFXPRY-uU"}' -H 'Content-Type: application/json' http://localhost:8080/validate
+ 4416  curl -d '{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkdW1teV9pc3N1ZXIiLCJleHAiOjE1OTM1ODQ5MTE5OTN9.C6SpJjIrXr0ZRkecFy9Nt32X3dZ88yZDPjUFXPRY-uU"}' -H 'Content-Type: application/json' http://localhost:8081/validate
+ 4417  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4NDkzMzE4OX0.3weriV126OMyv3mvFmDjT8oNXb0MpbOYK58b6xsUNRo1" http://localhost:4000/user/all
+ 4418  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4NDkzMzE4OX0.3weriV126OMyv3mvFmDjT8oNXb0MpbOYK58b6xsUNRo" http://localhost:4000/user/all
+ 4419  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/login
+ 4420  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODY1OTk1NH0.z7zsEABxQwSEwp2_RUJPOk6OFCnpJRYMccXYm8bSuC41" http://localhost:4000/user/all
+ 4421  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODY1OTk1NH0.z7zsEABxQwSEwp2_RUJPOk6OFCnpJRYMccXYm8bSuC4" http://localhost:4000/user/all
+ 4422  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODY1OTk1NH0.z7zsEABxQwSEwp2_RUJPOk6OFCnpJRYMccXYm8bSuC41" http://localhost:4000/user/all | jq
+ 4423  curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODY1OTk1NH0.z7zsEABxQwSEwp2_RUJPOk6OFCnpJRYMccXYm8bSuC4" http://localhost:4000/user/all | jq
+ 4424  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODg5MzkzMn0.DyZ4q2819rjtLM8RXWCUqMRKvqr8XUNPscvxY6J9wBs1" http://localhost:4000/user/all | jq
+ 4425  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODg5MzkzMn0.DyZ4q2819rjtLM8RXWCUqMRKvqr8XUNPscvxY6J9wBs" http://localhost:4000/user/all | jq
+ 4426  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODg5MzkzMn0.DyZ4q2819rjtLM8RXWCUqMRKvqr8XUNPscvxY6J9wBs1" http://localhost:4000/user/726615be-7ae9-47a5-8fbb-02be9dde341c | jq
+ 4427  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODg5MzkzMn0.DyZ4q2819rjtLM8RXWCUqMRKvqr8XUNPscvxY6J9wBs" http://localhost:4000/user/726615be-7ae9-47a5-8fbb-02be9dde341c | jq
+ 4428  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4ODg5MzkzMn0.DyZ4q2819rjtLM8RXWCUqMRKvqr8XUNPscvxY6J9wBs" http://localhost:4000/user/726615be-7ae9-47a5-8fbb-02be9dde341c
+ 4429  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" http://localhost:4000/user/726615be-7ae9-47a5-8fbb-02be9dde341c
+ 4430  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" http://localhost:4000/user/8ca4a386-2c5b-4e84-8b13-e301030503ca1
+ 4431  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" http://localhost:4000/user/8ca4a386-2c5b-4e84-8b13-e301030503ca
+ 4432  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer ${YOUR-TOKEN}" -d '{"email": "sam.leung_update@test.com"}' http://localhost:4000/user/update/8ca4a386-2c5b-4e84-8b13-e301030503ca
+ 4433  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" -d '{"email": "sam.leung_update@test.com"}' http://localhost:4000/user/update/8ca4a386-2c5b-4e84-8b13-e301030503ca
+ 4434  curl -X DELETE -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" http://localhost:4000/user/delete/8ca4a386-2c5b-4e84-8b13-e301030503ca
+ 4446  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU4OTA3MjE2Nn0.tJt3LOVYOTfHgC0bI0aNJsLqRcxj8EqFPaKbYRf_fkA" http://localhost:4000/user/8ca4a386-2c5b-4e84-8b13-e301030503ca | jq
+ 4447  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU5MTY2NTQ5MH0.EPdRPZjAiYpNk2vmEi8bQRk5drPhb3Tj9hiv3nEBCOY" http://localhost:4000/user/8ca4a386-2c5b-4e84-8b13-e301030503ca | jq
+ 4448  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU5MTY2NTQ5MH0.EPdRPZjAiYpNk2vmEi8bQRk5drPhb3Tj9hiv3nEBCOY" http://localhost:4000/user/4cb84a9f-9c02-4fff-88a1-96ef117734c2 | jq
+ 4449  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbS5sZXVuZ0B0ZXN0LmNvbSIsImV4cCI6MTU5MzU5MTY2NTQ5MH0.EPdRPZjAiYpNk2vmEi8bQRk5drPhb3Tj9hiv3nEBCOY" http://localhost:4000/user/4cb84a9f-9c02-4fff-88a1-96ef117734c21 | jq
+ 4450  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/register
+ 4451  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/register 
+ 4452  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung_update@test.com", "password": "12345678_update"}' http://localhost:4000/user/update/4cb84a9f-9c02-4fff-88a1-96ef117734c2
+ 4453  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/update/4cb84a9f-9c02-4fff-88a1-96ef117734c21
+ 4454  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/update/4cb84a9f-9c02-4fff-88a1-96ef117734c2
+ 4455  curl -v -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/register | jq
+ 4456  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12312345678"}' http://localhost:4000/user/login | jq
+ 4457  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung@test.com", "password": "12345678_udate"}' http://localhost:4000/user/update/043d98f7-2a1f-4d9a-81c7-7aa84809a4b9
+ 4458  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung@test.com", "password": "12345678_update"}' http://localhost:4000/user/update/043d98f7-2a1f-4d9a-81c7-7aa84809a4b9
+ 4459  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678_update"}' http://localhost:4000/user/login | jq
+ 4462  curl localhost:4000/user/mockup | jq
+ 4464  curl localhost:4000/user/mockup
+ 4465  curl -X PATCH -H "Content-Type: Application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiNGNiODRhOWYtOWMwMi00ZmZmLTg4YTEtOTZlZjExNzczNGMyIiwiZXhwIjoxNTkzNTkzNjkyMDM0fQ.4AwcuKKP0n8PSgjDt0c4pzDToHdbgCkbItWh5545kb8" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/update/043d98f7-2a1f-4d9a-81c7-7aa84809a4b9
+ 4494  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/login | jq
+ 4495  curl -H "Authorization: Bearer ${YOUR-TOKEN}" http://localhost:4000/user/all | jq
+ 4496  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiMDQzZDk4ZjctMmExZi00ZDlhLTgxYzctN2FhODQ4MDlhNGI5IiwiZXhwIjoxNTkzNjE1NDQwNTc4fQ.nsLSuuQ-rJXunq8nz4xFMJ_14uoX7AL3hee3A_FZCZ8" http://localhost:4000/user/all | jq
+ 4497  curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1a2V5IjoiMDQzZDk4ZjctMmExZi00ZDlhLTgxYzctN2FhODQ4MDlhNGI5IiwiZXhwIjoxNTkzNjE1NDQwNTc4fQ.nsLSuuQ-rJXunq8nz4xFMJ_14uoX7AL3hee3A_FZCZ8" http://localhost:4000/user/043d98f7-2a1f-4d9a-81c7-7aa84809a4b9 | jq
+ 4498  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung@test.com", "password": "12345678"}' http://localhost:4000/user/register | jq
+ 4499  curl -X POST -H "Content-Type: Application/json" -d '{"email": "sam.leung02@test.com", "password": "12345678"}' http://localhost:4000/user/register | jq
+ 4528  curl localhost:5000/
+ 4529  curl -X GET localhost:5000/devices
+ 4530  curl -X GET localhost:5000
+ 4531  curl -X GET localhost:5000/
+ 4538  curl localhost:5000/device
+ 4553  curl localhost:5000/devices
+ 4554  curl localhost:5000/devices | jq
+ 4735  curl https://data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com/?action=hi
+ 4737  curl data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com
+ 4738  curl data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=hi
+ 4739  curl data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com/?action=hi
+ 4740  curl "data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=hi"
+ 4741  curl "data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4742  curl "data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=warmup"
+ 4743  curl "data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=init"
+ 4744  curl "data-LB8A1-1FYG8HRI3DEKE-2095336845.ap-southeast-1.elb.amazonaws.com?action=select"
+ 4877  curl -H "Content-Type: Application/json" -d "{'api_key': 'aed5d505bc4afd50f1091eeacb8e7271'}"  https://api.themoviedb.org/3/movie/550\?api_key\=aed5d505bc4afd50f1091eeacb8e7271
+ 4878  curl https://api.themoviedb.org/3/movie/550\?api_key=aed5d505bc4afd50f1091eeacb8e7271
+ 4879  curl https://api.themoviedb.org/3/movie/550\?api_key=aed5d505bc4afd50f1091eeacb8e7271 | jq
+ 4951  history | grep "curl"
+ 4952  curl "Auror-Auror-NSF6YX3V6FJA-1886760791.ap-southeast-1.elb.amazonaws.com?action=hi"
+ 4953  curl "Auror-Auror-NSF6YX3V6FJA-1886760791.ap-southeast-1.elb.amazonaws.com?action=init"
+ 4954  curl "Auror-Auror-NSF6YX3V6FJA-1886760791.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4955  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=hi"
+ 4956  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=init"
+ 4957  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=warmup"
+ 4958  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=select"
+ 4959  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=batch"
+ 4960  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=transaction"
+ 4966  curl "Auror-Auror-VQPV0F7QDIN2-1167007005.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4967  curl "Auror-Auror-7Z74YZFPU7T8-53853294.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4968  curl "Auror-Auror-16RZ8ZDAE4WZG-48453327.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4969  curl "Auror-Auror-16RZ8ZDAE4WZG-48453327.ap-southeast-1.elb.amazonaws.com?action=hi"
+ 4974  curl "Auror-Auror-1R76QGNSY06U0-1255788322.ap-southeast-1.elb.amazonaws.com?action=hi"
+ 4975  curl "Auror-Auror-1R76QGNSY06U0-1255788322.ap-southeast-1.elb.amazonaws.com?action=warmup"
+ 4976  curl "Auror-Auror-1R76QGNSY06U0-1255788322.ap-southeast-1.elb.amazonaws.com?action=test"
+ 4977  curl "Auror-Auror-1R76QGNSY06U0-1255788322.ap-southeast-1.elb.amazonaws.com?action=init"
+ 4978  curl "Auror-Auror-1R76QGNSY06U0-1255788322.ap-southeast-1.elb.amazonaws.com?action=select"
+ 5025  curl localhost:80
+ 5048  curl localhost
+ 5089  curl Fraga-LB8A1-12U8I8H36Y8HR-1848889518.us-west-2.elb.amazonaws.com
+ 5182  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '.data'
+ 5183  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '.data.data'
+ 5184  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '.data.login'
+ 5185  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '.data.login | {"x-token": .token}'
+ 5194  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '.data.login | {"x-token": .token, "x-refresh-token": .refreshToken}'
+ 5207  curl localhost:3000
+ 5251  curl localhost:5000
+ 5253  curl localhost:4004
+ 5269  curl localhost:4001
+ 5270  curl localhost:4001/user/samleung
+ 5271  curl -X POST -H localhost:4001/user/samleung -d '{"username": "sam.leung", "password": "12345678"}'
+ 5272  history | grep curl
+ 5273  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678"}' localhost:4001/user
+ 5274  curl localhost:4001/users
+ 5275  curl localhost:4001/user:/sam.leung | jq
+ 5278  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "hello": "world"}' localhost:4001/user
+ 5279  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "hello": "world"}' localhost:4001/users/sam.leung
+ 5280  curl localhost:4001/users | jq
+ 5283  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "hello": "world"}' localhost:4001/user/sam.leung
+ 5284  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789"}' localhost:4001/user/sam.leung
+ 5285  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789"}' localhost:4001/user
+ 5286  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "hello": "world"}' localhost:4001/user/sam.leung
+ 5287  curl -X DELETE localhost:4001/user/sam.leung | jq
+ 5288  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "sam", }' localhost:4001/user
+ 5289  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M"}' localhost:4001/user
+ 5290  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M"}' localhost:4001/user | jq
+ 5291  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung2", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M", "hello", "world"}' localhost:4001/user
+ 5292  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung2", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "Male", "hello", "world"}' localhost:4001/user
+ 5293  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung2", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "Male", "hello": "world"}' localhost:4001/user
+ 5294  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung2", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M", "hello": "world"}' localhost:4001/user
+ 5295  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M", "hello": "world"}' localhost:4001/user
+ 5296  curl -v localhost:4001/user/sam.leung2 | jq
+ 5297  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "Sam", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user
+ 5298  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user
+ 5304  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "testtest.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5305  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "testtest.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user
+ 5306  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user
+ 5307  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user
+ 5308  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5309  curl -X POST -H "Content-Type: Application/json" -d '{"username": ".", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5310  curl -X POST -H "Content-Type: Application/json" -d '{"username": ".sam", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5311  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5312  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5313  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam..leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5314  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam....leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5315  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam._leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5316  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam_leung", "password": "1234567", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5317  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam_leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5319  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "test@test.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5320  curl -v localhost:4001/users | jq
+ 5321  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "lcmkey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5322  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5323  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5325  curl -v localhost:4001/user/sam.leung | jq
+ 5326  curl -v localhost:4001/user/sam.leungq | jq
+ 5327  curl -v localhost:4001/user/sam.leung2
+ 5328  curl localhost:4001/user/sam.leung2
+ 5329  curl localhost:4001/user/sam.leung
+ 5330  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq
+ 5331  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M"}' localhost:4001/user | jq
+ 5332  curl -X PUTCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M"}' localhost:4001/user | jq
+ 5333  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F"}' localhost:4001/user/sam.leung | jq
+ 5334  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M"}' localhost:4001/user/sam.leung | jq
+ 5335  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user/sam.leung | j
+ 5336  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user | jq
+ 5356  10685* curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "fullName": "Sam Leung"}' localhost:4001/user | jq\n
+ 5357  10685* curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "12345678", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M"}' localhost:4001/user
+ 5358  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user | jq\n
+ 5359  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user/sam.leung | jq\n
+ 5360  curl -X PATCH -H "Content-Type: Application/json" -d '{"username": "sam.leung", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user/sam.leung | jq\n
+ 5380  curl localhost:4001/user/sam.leung | jq
+ 5381  curl localhost:4044/user/sam.leung | jq
+ 5382  curl localhost:4044/users | jq
+ 5383  curl localhost:4044/auth | jq
+ 5384  curl localhost:4044/auth
+ 5385  curl -X POST localhost:4044/autha
+ 5386  curl -X POST localhost:4044/auth
+ 5388  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "password": "123456789", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "M", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4001/user | jq\n
+ 5445  curl localhost:3443
+ 5446  curl https://localhost:3443
+ 5536  curl -X POST localhost:4044/users
+ 5537  curl -X GET localhost:4044/users
+ 5538  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user/sam.leung | jq\n
+ 5539  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user/sam.leung\n
+ 5542  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user
+ 5543  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user
+ 5544  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5545  curl -X POST -H "Content-Type: Application/json" -d '{"username": "sam.leung", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5546  curl -X POST -H "Content-Type: Application/json" -d '{"email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user
+ 5547  curl -X POST -H "Content-Type: Application/json" -d '{"email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5548  curl -X POST -H "Content-Type: Application/json" -d '{"username": "hello","email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5549  curl -X POST -H "Content-Type: Application/json" -d '{"username": " hello","email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5550  curl -X POST -H "Content-Type: Application/json" -d '{"username": ".hello","email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5551  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5552  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "123", "email": "LcmKey@gmail.com", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5553  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "123", "email": "LcmKey@gmail", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5554  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "12345678", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5555  curl -X POST -H "Content-Type: Application/json" -d '{"username": "samleung", "password": "12345678", "email": "LcmKey@gmail", "firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5618  curl -X POST -H "Content-Type: Application/json" -d '{"firstName": "Sam ", "lastName": "Leung", "gender": "F", "role": "5f4bebde575a1015a2d5c2a2"}' localhost:4044/user | jq
+ 5620  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5641  curl -X POST --cookie "hello=world" https://vqefl9i2ic.execute-api.ap-southeast-1.amazonaws.com/dev/getdata
+ 5642  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"sam.leung12\", user_pwd: \"sam.leung12\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5680  curl -X POST https://api.samleung.me/getData
+ 5692  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"Samleung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5693  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"TestC\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5748  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"Sam.leung\", user_pwd: \"12345678\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5771  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5799  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 5800  curl http://54.169.200.75:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 6047  curl ipinfo.io/ip
+ 6048  curl -i ipinfo.io/ip
+ 6049  curl ipinfo.io/ip
+ 6050  curl -i ipinfo.io/ip
+ 6051  curl -i ipinfo.io
+ 6052  curl -i ipinfo.io/ip
+ 6053  curl -i ipinfo.io
+ 6054  curl -i ipinfo.io/hostname
+ 6055  curl ipinfo.io/ip
+ 6056  curl ipinfo.io | jq
+ 6059  curl ipinfo.io | jq
+ 6122  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 6339  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 6340  curl ipinfo.io | jq
+ 6344  curl ipinfo.io | jq
+ 6370  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 6625  curl -X POST https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData
+ 6626  curl -X POST https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6628  curl -X POST https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6629  curl -X POST -H "Content-Type: application/json" -d '{"x-api-key":"berQXI6ftC4FrKelEdqkPv7RbkiI2pp7j6bwxJzj"}' https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6631  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: berQXI6ftC4FrKelEdqkPv7RbkiI2pp7j6bwxJzj' https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6632  curl -X POST https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6633  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: berQXI6ftC4FrKelEdqkPv7RbkiI2pp7j6bwxJzj' https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6638  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6639  curl -X POST https://s2g3p2kcia.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6640  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6643  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6644  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData/getData | jq
+ 6645  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6646  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData/getData | jq
+ 6647  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6648  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData/getData | jq
+ 6649  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6650  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6651  curl -X POST https://uvy2fnn5pi.execute-api.us-east-1.amazonaws.com/Dev/getData | jq
+ 6652  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6655  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6683  curl -X POST https://api.game-info-hk.com/getData | jq
+ 6684  curl ipinfo.io | jq
+ 6685  curl -X POST https://api.game-info-hk.com/getData | jq
+ 7254  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7260  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7265  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@/mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7266  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7292  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7320  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://xehjo8swre.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7321  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: TvECy7sEIl8cpXuTVA77U6Mmh0Lgvk6l65iHJLwh' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7322  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: TvECy7sEIl8cpXuTVA77U6Mmh0Lgvk6l65iHJLwh' -d "@./mock-data/samleung.json" https://xehjo8swre.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7327  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7329  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7330  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7331  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7332  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7333  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7337  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7356  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 7506  curl localhost:8082
+ 7538  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7539  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7540  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7541  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@./mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7542  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7543  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: a69SnbmxOv8JXU5jHlup4Zj2WpMUhK92U6Nz3nJf' -d "@/mock-data/samleung.json" https://zwsgqlixxb.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7544  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7558  curl -X POST -H "Content-Type: application/json" -H 'x-api-key: CtSjOUHujMxvvbk5Vh7Q1EyGr7jE8U91bVz1App1' -d "@./mock-data/samleung.json" https://q92uyo9qog.execute-api.us-east-1.amazonaws.com/Dev/createData\n
+ 7599  curl -X GET https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod
+ 7600  curl -X GET https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | hq
+ 7601  curl -X GET https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7605  curl -F ‘data=@apollo_icon.png’ https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/d14bc4b1-3c90-46e0-8ef6-daa9db73fe8f.jpg\?AWSAccessKeyId\=ASIARVWCPKQIMD7SX5NQ\&Content-Type\=image%2Fjpeg\&Expires\=1600728421\&Signature\=iu91Hue8vpEICd0tAJ8LftboBMY%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhANDW1uxXwy6FG9PzEVQqYERixLHhnnIC1ayJs1a3onpTAiEAwC1ylRLombmK0n%2FRTzfATuAU6pVcPXr4cL7CI8K4oZ0q6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDHCXc%2BSb%2Br0Nqw%2BXcyq9ARhgRy3Bh6bpIgtWNu4XIQq58hoZbrhl0uuWRhp%2BPM%2BLNWlggNeY3c9CriNWiuoquhQ9cFu2ptg9lwwkZ00g267HTmQyx%2BOIffJIuDVBbZGohcrLYyHI7X0DfKZ70kFNmJrgaYK8y60a1EacxuxSey0EZAA%2BRsCT41RoRfegMvgkuHMzTZyuAUeC8qEMJZiN9206rXqLm%2BEts5efbSIYTO3oictCQAwEclskVvKDwiBx%2BCX%2BqkQj5HdrRHYd0zDY0KT7BTrfAfX18QIjKNBgnsyosPBjV9%2BGZo%2B7723SgE1DjCma%2Fp%2FsFLj4Fs8iTyFPEnBuIoBI4GZJs4Ks0RfJHzd1VMVAp7qc0pITj5fgdyMuQGUrz9%2F51JNN8HMvHEmbd05Lx0f1sx2IdaRC%2Fc%2BnIOPDUohggO4cHyBGFBkv%2FsRabdyc4fdNYJzczJMX15BAdrP5W9M%2BYbEeVs8qawTVFzFZiN9g2GaxERz0xAhewwsOmBv6coKYXHUvHxjkj%2FikYZX8Qj2jSHEihdjw%2FTYGauNRIEKk%2BQaCYKnMDytDKBxcmU7cbpg%3D
+ 7606  curl -F ‘data=@apollo_icon.png’ "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/d14bc4b1-3c90-46e0-8ef6-daa9db73fe8f.jpg\?AWSAccessKeyId\=ASIARVWCPKQIMD7SX5NQ\&Content-Type\=image%2Fjpeg\&Expires\=1600728421\&Signature\=iu91Hue8vpEICd0tAJ8LftboBMY%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhANDW1uxXwy6FG9PzEVQqYERixLHhnnIC1ayJs1a3onpTAiEAwC1ylRLombmK0n%2FRTzfATuAU6pVcPXr4cL7CI8K4oZ0q6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDHCXc%2BSb%2Br0Nqw%2BXcyq9ARhgRy3Bh6bpIgtWNu4XIQq58hoZbrhl0uuWRhp%2BPM%2BLNWlggNeY3c9CriNWiuoquhQ9cFu2ptg9lwwkZ00g267HTmQyx%2BOIffJIuDVBbZGohcrLYyHI7X0DfKZ70kFNmJrgaYK8y60a1EacxuxSey0EZAA%2BRsCT41RoRfegMvgkuHMzTZyuAUeC8qEMJZiN9206rXqLm%2BEts5efbSIYTO3oictCQAwEclskVvKDwiBx%2BCX%2BqkQj5HdrRHYd0zDY0KT7BTrfAfX18QIjKNBgnsyosPBjV9%2BGZo%2B7723SgE1DjCma%2Fp%2FsFLj4Fs8iTyFPEnBuIoBI4GZJs4Ks0RfJHzd1VMVAp7qc0pITj5fgdyMuQGUrz9%2F51JNN8HMvHEmbd05Lx0f1sx2IdaRC%2Fc%2BnIOPDUohggO4cHyBGFBkv%2FsRabdyc4fdNYJzczJMX15BAdrP5W9M%2BYbEeVs8qawTVFzFZiN9g2GaxERz0xAhewwsOmBv6coKYXHUvHxjkj%2FikYZX8Qj2jSHEihdjw%2FTYGauNRIEKk%2BQaCYKnMDytDKBxcmU7cbpg%3D"
+ 7607  curl -X GET https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7608  curl --request PUT \\n     --url "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/a77bdb08-67b2-4596-8cc6-6f4aeb82c47b.jpg\?AWSAccessKeyId\=ASIARVWCPKQIMD7SX5NQ\&Content-Type\=image%2Fjpeg\&Expires\=1600728709\&Signature\=8YFqop1XTrMHp7Vs%2B3nLnOrFZSM%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhANDW1uxXwy6FG9PzEVQqYERixLHhnnIC1ayJs1a3onpTAiEAwC1ylRLombmK0n%2FRTzfATuAU6pVcPXr4cL7CI8K4oZ0q6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDHCXc%2BSb%2Br0Nqw%2BXcyq9ARhgRy3Bh6bpIgtWNu4XIQq58hoZbrhl0uuWRhp%2BPM%2BLNWlggNeY3c9CriNWiuoquhQ9cFu2ptg9lwwkZ00g267HTmQyx%2BOIffJIuDVBbZGohcrLYyHI7X0DfKZ70kFNmJrgaYK8y60a1EacxuxSey0EZAA%2BRsCT41RoRfegMvgkuHMzTZyuAUeC8qEMJZiN9206rXqLm%2BEts5efbSIYTO3oictCQAwEclskVvKDwiBx%2BCX%2BqkQj5HdrRHYd0zDY0KT7BTrfAfX18QIjKNBgnsyosPBjV9%2BGZo%2B7723SgE1DjCma%2Fp%2FsFLj4Fs8iTyFPEnBuIoBI4GZJs4Ks0RfJHzd1VMVAp7qc0pITj5fgdyMuQGUrz9%2F51JNN8HMvHEmbd05Lx0f1sx2IdaRC%2Fc%2BnIOPDUohggO4cHyBGFBkv%2FsRabdyc4fdNYJzczJMX15BAdrP5W9M%2BYbEeVs8qawTVFzFZiN9g2GaxERz0xAhewwsOmBv6coKYXHUvHxjkj%2FikYZX8Qj2jSHEihdjw%2FTYGauNRIEKk%2BQaCYKnMDytDKBxcmU7cbpg%3D" \\n     --verbose \\n     --data "My data"
+ 7609  curl -X POST \\n     --url "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/a77bdb08-67b2-4596-8cc6-6f4aeb82c47b.jpg\?AWSAccessKeyId\=ASIARVWCPKQIMD7SX5NQ\&Content-Type\=image%2Fjpeg\&Expires\=1600728709\&Signature\=8YFqop1XTrMHp7Vs%2B3nLnOrFZSM%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhANDW1uxXwy6FG9PzEVQqYERixLHhnnIC1ayJs1a3onpTAiEAwC1ylRLombmK0n%2FRTzfATuAU6pVcPXr4cL7CI8K4oZ0q6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDHCXc%2BSb%2Br0Nqw%2BXcyq9ARhgRy3Bh6bpIgtWNu4XIQq58hoZbrhl0uuWRhp%2BPM%2BLNWlggNeY3c9CriNWiuoquhQ9cFu2ptg9lwwkZ00g267HTmQyx%2BOIffJIuDVBbZGohcrLYyHI7X0DfKZ70kFNmJrgaYK8y60a1EacxuxSey0EZAA%2BRsCT41RoRfegMvgkuHMzTZyuAUeC8qEMJZiN9206rXqLm%2BEts5efbSIYTO3oictCQAwEclskVvKDwiBx%2BCX%2BqkQj5HdrRHYd0zDY0KT7BTrfAfX18QIjKNBgnsyosPBjV9%2BGZo%2B7723SgE1DjCma%2Fp%2FsFLj4Fs8iTyFPEnBuIoBI4GZJs4Ks0RfJHzd1VMVAp7qc0pITj5fgdyMuQGUrz9%2F51JNN8HMvHEmbd05Lx0f1sx2IdaRC%2Fc%2BnIOPDUohggO4cHyBGFBkv%2FsRabdyc4fdNYJzczJMX15BAdrP5W9M%2BYbEeVs8qawTVFzFZiN9g2GaxERz0xAhewwsOmBv6coKYXHUvHxjkj%2FikYZX8Qj2jSHEihdjw%2FTYGauNRIEKk%2BQaCYKnMDytDKBxcmU7cbpg%3D" \\n     --verbose \\n     --data "My data"
+ 7610  curl -X POST \\n     --url "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/a77bdb08-67b2-4596-8cc6-6f4aeb82c47b.jpg\?AWSAccessKeyId\=ASIARVWCPKQIMD7SX5NQ\&Content-Type\=image%2Fjpeg\&Expires\=1600728709\&Signature\=8YFqop1XTrMHp7Vs%2B3nLnOrFZSM%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhANDW1uxXwy6FG9PzEVQqYERixLHhnnIC1ayJs1a3onpTAiEAwC1ylRLombmK0n%2FRTzfATuAU6pVcPXr4cL7CI8K4oZ0q6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDHCXc%2BSb%2Br0Nqw%2BXcyq9ARhgRy3Bh6bpIgtWNu4XIQq58hoZbrhl0uuWRhp%2BPM%2BLNWlggNeY3c9CriNWiuoquhQ9cFu2ptg9lwwkZ00g267HTmQyx%2BOIffJIuDVBbZGohcrLYyHI7X0DfKZ70kFNmJrgaYK8y60a1EacxuxSey0EZAA%2BRsCT41RoRfegMvgkuHMzTZyuAUeC8qEMJZiN9206rXqLm%2BEts5efbSIYTO3oictCQAwEclskVvKDwiBx%2BCX%2BqkQj5HdrRHYd0zDY0KT7BTrfAfX18QIjKNBgnsyosPBjV9%2BGZo%2B7723SgE1DjCma%2Fp%2FsFLj4Fs8iTyFPEnBuIoBI4GZJs4Ks0RfJHzd1VMVAp7qc0pITj5fgdyMuQGUrz9%2F51JNN8HMvHEmbd05Lx0f1sx2IdaRC%2Fc%2BnIOPDUohggO4cHyBGFBkv%2FsRabdyc4fdNYJzczJMX15BAdrP5W9M%2BYbEeVs8qawTVFzFZiN9g2GaxERz0xAhewwsOmBv6coKYXHUvHxjkj%2FikYZX8Qj2jSHEihdjw%2FTYGauNRIEKk%2BQaCYKnMDytDKBxcmU7cbpg%3D" \\n     -v \\n     -d "My data"
+ 7614  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod
+ 7615  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7619  curl -v --upload-file 1de1d967-b707-4b94-91d2-e9c388542092.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/1de1d967-b707-4b94-91d2-e9c388542092.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729540\&Signature\=RcPivojqAnit8uNpeuQfmUSndKw%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D"
+ 7625  curl -v -T ./images.jpeg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/1de1d967-b707-4b94-91d2-e9c388542092.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729540\&Signature\=RcPivojqAnit8uNpeuQfmUSndKw%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D"
+ 7626  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod
+ 7627  curl -v --upload-file 1de1d967-b707-4b94-91d2-e9c388542092.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/118d6c34-bda9-43f7-b00a-04d74ee55a6d.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729830\&Signature\=3B8YVeoxus1iweuQbXCUtJ7zMBE%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D"
+ 7628  curl -v --upload-file ./images.jpeg https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/118d6c34-bda9-43f7-b00a-04d74ee55a6d.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729830\&Signature\=3B8YVeoxus1iweuQbXCUtJ7zMBE%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D
+ 7629  curl -X PUT -v --upload-file ./images.jpeg https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/118d6c34-bda9-43f7-b00a-04d74ee55a6d.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729830\&Signature\=3B8YVeoxus1iweuQbXCUtJ7zMBE%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D
+ 7630  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod
+ 7631  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7632  curl -X PUT -v --upload-file ./images.jpeg https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/fb1e2541-2c9c-4357-8e27-f923ace27919.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600729968\&Signature\=HTAHqcdk8h0I7JBmkiyzPIwDDaw%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D
+ 7633  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7634  curl -X PUT -T ./images.jpeg -L "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/a60a0b87-b432-4229-b92a-3c45c29af3ff.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600730107\&Signature\=ptRokyK9WbMs8BoVyQhcshWl4kQ%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D"
+ 7637  curl -X PUT -T ./a60a0b87-b432-4229-b92a-3c45c29af3ff.jpg -L "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/a60a0b87-b432-4229-b92a-3c45c29af3ff.jpg\?AWSAccessKeyId\=ASIARVWCPKQIBOSAE5VJ\&Content-Type\=image%2Fjpeg\&Expires\=1600730107\&Signature\=ptRokyK9WbMs8BoVyQhcshWl4kQ%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhAJ2Hirug4%2FCALAWQNQreOLRlDJyQ64aqPiFMC3wHLSGgAiEAwJjvNBj1vpnQigA0Cwv7xhzd2%2Bfdc0bvg3io896IGJEq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDLOzd3J5R%2Fg1f1xHkSq9AWrXYv1Atk%2Biglz2J7fuM%2FXOQh7kdfXF9j5uGfP5JBXekzFX5pZdYvSNaVXmmYQ25Gr%2BMK7NXGKolqaB%2FOv0ffe2nuqf0Ov319iDllaJbIQzOl6bSrMtmDh7Vh3%2Bj0aVMCQJHeINymR%2F7%2FyBZWDVR%2FsqUcbEIdsObweLdqJ4qIM5z9gRuwrh6UzFuqeuDjE1F5q7z247WvO6tN6HaEFO4xEJk4jN45ErJN5NFXRM%2FPz6VaKmY5PDkGWOTnJQVDC83KT7BTrfAag%2Br7o3a1V5DaCraW6QnEQVam%2BYWZyUHxgeV%2B9E6Az6ZFlGiRrzGPCh3JSCJ6naSZRvowpadBAentJIYJkVYZYKXPY%2FyCV8GgxoNwO4J1qXHMj0%2BOjC9O8Pl1%2B6UDT2GO%2BdS4aJWjtYetaEs3ufLOjz5nPsPb2IIbesHNQJVqIqtyR2BisrIGM54UYZccKc5DR5%2FPpGsfzZTe54lKcHXKuSUbqc%2BPpmMM1OuMwxO7FoFQtk7CLYIQWzLcfqkOemusTVsetFBHw85Du%2F6Ntu99VKU06vo%2BdfThjp6d2twy4%3D"
+ 7648  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7650  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7653  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7654  curl -v -X PUT -T ./image.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/e4146e55-50dc-4a7c-9b41-13c58fdd3681.jpg\?AWSAccessKeyId\=ASIARVWCPKQIB5Z5H252\&Content-Type\=image%2Fjpeg\&Expires\=1600729774\&Signature\=v%2Bo%2BFPGw%2BBI34BRaoMWZRTBBJEs%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhALuga9aZ9FhtYW4ziGfwZLNgIOvumFOTJ3qW4WEfbLxrAiEArcYQHF5CA7Eff8dq5LubWUYzfSVEjQo1VOV%2Fb83qprIq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDFgm0uzyI3I5zGiSYCq9AQZl8gdMniX9fUBlchkQ5KFYAZtMPvbFMksPLopQHv6D84jmsIo5RdkC5u3RubJ9DJjEtLBAs%2B%2FmMci1JfkJynk3V8whyKM4cPW%2FmxbrklYtxCnDm8qBnEehFKJraYoz%2BL2bgf5SAujpT26QYIS6IEZPlUAirv69AhBEvqz1rRcKJfNgYM3uRGpk1ud%2BS3T7WbjNt7k8gidI3WVGa%2BYdwwy19EXe6lOwcPjQsj0FmvH6RI%2BmpRy4%2FZ4o4k%2BqbjD%2F4qT7BTrfAXp5Q%2B4PaPpyiWcgixoyHpJZszgFobr7mzGmL7M8ftE5WFYTHOnPy7vv1Y3Qu7FP%2Be36eigbMHLQw1tm58c9qaA52lmlnAMeVlA1vBtTEO1rId55bziUI6TSZhY%2FsK0tepDGzyiJdsc64UT51LUe0RVAhA%2FAhL%2BY2GM3GfeQCBiE2wrmIKd3oa1nzRpDAJCgL0gkbggl9mU14C%2FY7w04pEAV36XAYo8bQDBAcj6dbhxxBBKj4QMuZbC2Xs0nr9GlW3GMsFnRyWRQPlH%2FTWLfy3eLT1%2B3VaQp53nG1ck3HLY%3D"
+ 7655  curl https://6ierpp28eh.execute-api.ap-southeast-1.amazonaws.com/prod | jq
+ 7656  curl -v -X PUT -T ./image.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/e4146e55-50dc-4a7c-9b41-13c58fdd3681.jpg\?AWSAccessKeyId\=ASIARVWCPKQIB5Z5H252\&Content-Type\=image%2Fjpeg\&Expires\=1600729774\&Signature\=v%2Bo%2BFPGw%2BBI34BRaoMWZRTBBJEs%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhALuga9aZ9FhtYW4ziGfwZLNgIOvumFOTJ3qW4WEfbLxrAiEArcYQHF5CA7Eff8dq5LubWUYzfSVEjQo1VOV%2Fb83qprIq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDFgm0uzyI3I5zGiSYCq9AQZl8gdMniX9fUBlchkQ5KFYAZtMPvbFMksPLopQHv6D84jmsIo5RdkC5u3RubJ9DJjEtLBAs%2B%2FmMci1JfkJynk3V8whyKM4cPW%2FmxbrklYtxCnDm8qBnEehFKJraYoz%2BL2bgf5SAujpT26QYIS6IEZPlUAirv69AhBEvqz1rRcKJfNgYM3uRGpk1ud%2BS3T7WbjNt7k8gidI3WVGa%2BYdwwy19EXe6lOwcPjQsj0FmvH6RI%2BmpRy4%2FZ4o4k%2BqbjD%2F4qT7BTrfAXp5Q%2B4PaPpyiWcgixoyHpJZszgFobr7mzGmL7M8ftE5WFYTHOnPy7vv1Y3Qu7FP%2Be36eigbMHLQw1tm58c9qaA52lmlnAMeVlA1vBtTEO1rId55bziUI6TSZhY%2FsK0tepDGzyiJdsc64UT51LUe0RVAhA%2FAhL%2BY2GM3GfeQCBiE2wrmIKd3oa1nzRpDAJCgL0gkbggl9mU14C%2FY7w04pEAV36XAYo8bQDBAcj6dbhxxBBKj4QMuZbC2Xs0nr9GlW3GMsFnRyWRQPlH%2FTWLfy3eLT1%2B3VaQp53nG1ck3HLY%3D"
+ 7657  curl -v -X PUT -T ./image.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/0bc8f71a-1cac-402e-8db3-3c7460bb090a.jpg\?AWSAccessKeyId\=ASIARVWCPKQIB5Z5H252\&Content-Type\=image%2Fjpeg\&Expires\=1600729827\&Signature\=iEW4plDC3fC1XxbI4PxJeg%2F9kW8%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhALuga9aZ9FhtYW4ziGfwZLNgIOvumFOTJ3qW4WEfbLxrAiEArcYQHF5CA7Eff8dq5LubWUYzfSVEjQo1VOV%2Fb83qprIq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDFgm0uzyI3I5zGiSYCq9AQZl8gdMniX9fUBlchkQ5KFYAZtMPvbFMksPLopQHv6D84jmsIo5RdkC5u3RubJ9DJjEtLBAs%2B%2FmMci1JfkJynk3V8whyKM4cPW%2FmxbrklYtxCnDm8qBnEehFKJraYoz%2BL2bgf5SAujpT26QYIS6IEZPlUAirv69AhBEvqz1rRcKJfNgYM3uRGpk1ud%2BS3T7WbjNt7k8gidI3WVGa%2BYdwwy19EXe6lOwcPjQsj0FmvH6RI%2BmpRy4%2FZ4o4k%2BqbjD%2F4qT7BTrfAXp5Q%2B4PaPpyiWcgixoyHpJZszgFobr7mzGmL7M8ftE5WFYTHOnPy7vv1Y3Qu7FP%2Be36eigbMHLQw1tm58c9qaA52lmlnAMeVlA1vBtTEO1rId55bziUI6TSZhY%2FsK0tepDGzyiJdsc64UT51LUe0RVAhA%2FAhL%2BY2GM3GfeQCBiE2wrmIKd3oa1nzRpDAJCgL0gkbggl9mU14C%2FY7w04pEAV36XAYo8bQDBAcj6dbhxxBBKj4QMuZbC2Xs0nr9GlW3GMsFnRyWRQPlH%2FTWLfy3eLT1%2B3VaQp53nG1ck3HLY%3D"
+ 7674  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 7694  curl -v -X PUT -T ./image.jpg "https://s3.ap-southeast-1.amazonaws.com/serverless-presigned-url-dev-sam.leung-bucket/0bc8f71a-1cac-402e-8db3-3c7460bb090a.jpg\?AWSAccessKeyId\=ASIARVWCPKQIB5Z5H252\&Content-Type\=image%2Fjpeg\&Expires\=1600729827\&Signature\=iEW4plDC3fC1XxbI4PxJeg%2F9kW8%3D\&x-amz-security-token\=IQoJb3JpZ2luX2VjEGcaDmFwLXNvdXRoZWFzdC0xIkgwRgIhALuga9aZ9FhtYW4ziGfwZLNgIOvumFOTJ3qW4WEfbLxrAiEArcYQHF5CA7Eff8dq5LubWUYzfSVEjQo1VOV%2Fb83qprIq6QEIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwxMTUyOTgyMjcyMTYiDFgm0uzyI3I5zGiSYCq9AQZl8gdMniX9fUBlchkQ5KFYAZtMPvbFMksPLopQHv6D84jmsIo5RdkC5u3RubJ9DJjEtLBAs%2B%2FmMci1JfkJynk3V8whyKM4cPW%2FmxbrklYtxCnDm8qBnEehFKJraYoz%2BL2bgf5SAujpT26QYIS6IEZPlUAirv69AhBEvqz1rRcKJfNgYM3uRGpk1ud%2BS3T7WbjNt7k8gidI3WVGa%2BYdwwy19EXe6lOwcPjQsj0FmvH6RI%2BmpRy4%2FZ4o4k%2BqbjD%2F4qT7BTrfAXp5Q%2B4PaPpyiWcgixoyHpJZszgFobr7mzGmL7M8ftE5WFYTHOnPy7vv1Y3Qu7FP%2Be36eigbMHLQw1tm58c9qaA52lmlnAMeVlA1vBtTEO1rId55bziUI6TSZhY%2FsK0tepDGzyiJdsc64UT51LUe0RVAhA%2FAhL%2BY2GM3GfeQCBiE2wrmIKd3oa1nzRpDAJCgL0gkbggl9mU14C%2FY7w04pEAV36XAYo8bQDBAcj6dbhxxBBKj4QMuZbC2Xs0nr9GlW3GMsFnRyWRQPlH%2FTWLfy3eLT1%2B3VaQp53nG1ck3HLY%3D"
+ 7695  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 7874  curl https://ipinfo.io/ip
+ 8568  curl http://localhost:4000/graphql -X POST -H "Content-Type: application/json" -d '{"query": "mutation {  login(user: {login_name: \"admin\", user_pwd: \"P@ssw0rd\"}) {    token    refreshToken  }}"}' | jq '{"x-token": .data.login.token, "x-refresh-token": .data.login.refreshToken}'
+ 8715  curl https://samleung.me/
+ 8716  curl -v https://samleung.me/
+ 8988  $ curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:da2-4dfwpsjtcfeyxhwzdqdamfhg44" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql
+ 8989  curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:da2-4dfwpsjtcfeyxhwzdqdamfhg44" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql
+ 8990  curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:da2-4dfwpsjtcfeyxhwzdqdamfhg44" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 8991  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-4dfwpsjtcfeyxhwzdqdamfhg44" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9000  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9001  curl -X POST -H "Content-Type:application/graphql" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9002  curl -X POST -H "Content-Type:application/graphql" -d '{ "query": "query { posts { id } }" }' https://w55jpcrcpjapfimxkdrm64x2s4.appsync-api.us-east-1.amazonaws.com/graphql
+ 9003  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9004  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql
+ 9005  curl -X POST -H "Content-Type:application/graphql" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql
+ 9006  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9021  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql
+ 9022  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9023  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9024  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key: da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9025  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql
+ 9026  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9027  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9028  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9029  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { posts { id } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9030  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "myQuery { posts { id } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9031  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query MyQuery { posts { id } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9032  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9033  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9034  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { listUsers { items { email } } }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9035  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9036  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { myQuery { posts { id } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9037  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-gbbqzjw52nch3nfxqxpqznz454" -d '{ "query": "query { listUsers { items { email } } }" }' https://xuwje7wgtvg5dnuuao5nye76rq.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9038  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id } }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9039  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id title create_time} }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9042  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id title create_time} }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9043  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\=query MyQuery{posts{id}}
+ 9044  curl -X GET "https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\=query MyQuery{posts{id}}"
+ 9045  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\=query MyQuery{posts{id}}
+ 9046  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\=word
+ 9047  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?hello\=world
+ 9048  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\="query myQuery{posts {id}}"
+ 9049  curl -X GET https://xdim3ytbsh.execute-api.us-east-1.amazonaws.com/prod/graphql\?query\=query myQuery{posts {id}}
+ 9057  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-2ek5oh4uhvdnppn3xh5jgwchdm" -d '{ "query": "query { listNotes { id name completed} }" }' https://roojxswufjelha355vb2nm3yre.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9070  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-2ek5oh4uhvdnppn3xh5jgwchdm" -d '{ "query": "query { listNotes { id name completed} }" }' https://roojxswufjelha355vb2nm3yre.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9071  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { listNotes { id name completed} }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9072  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { post { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9073  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id } }" }' https://b7pjo3iuxnezvp77uwbxna73ey.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9074  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jaxgb7ligjgknirb7wl6cx4xbm" -d '{ "query": "query { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9075  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9076  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:${API_KEY}" -d '{ "query": "query { posts { id } }" }' https://$\{ID\}.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9077  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation () { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9078  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9079  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (post: {id: '0001', title: 'hello', create_time: ''}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9080  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (post: {id: "0001", title: "hello", create_time: ""}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9081  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (post: {id: \"0001\", title: \"hello\", create_time: \"\"}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9084  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9085  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { posts { id title create_time } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9126  curl -X POST https://x77f6z4tta.execute-api.us-east-1.amazonaws.com/prod/graphql
+ 9130  curl -X POST https://x77f6z4tta.execute-api.us-east-1.amazonaws.com/prod/graphql
+ 9137  curl -X POST https://x77f6z4tta.execute-api.us-east-1.amazonaws.com/prod/graphql
+ 9138  curl -X POST https://q6mfvj165d.execute-api.us-east-1.amazonaws.com/prod/graphql
+ 9232  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (post: { id: '0002', title: 'test', create_time: ''}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9233  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9234  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (createPost: { id: '0002', title: 'test', create_time: ''}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9235  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (createPost: { id: \'0002\', title: \'test', create_time: ''}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9236  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation (createPost: { id: \"0002\", title: \"test\", create_time: \"\"}) { posts { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9237  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation deletePost{ deletePost(id: \"0001\"){id})}" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9238  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation deletePost{ deletePost(id: \"0001\"){id}}" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9239  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation createPost{ createPost(id: \"0001\", title: \"hello\", create_time: \"\"){id}}" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9240  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation createPost{ createPost(post: {id: \"0001\", title: \"hello\", create_time: \"\"}){id}}" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9241  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { post(id: \"0001\") { id } }" }' https://$\{ID\}.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9242  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "query { post(id: \"0001\") { id } }" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9243  curl -X POST -H "Content-Type:application/graphql" -H "x-api-key:da2-jd7lbe35dzcgzablkn6csmn7oe" -d '{ "query": "mutation updatePost{ updatePost(post: {id: \"0001\", title: \"hello\", create_time: \"\"}){id}}" }' https://lzfyzii7rjhktkswy776mkqboa.appsync-api.us-east-1.amazonaws.com/graphql | jq
+ 9411  curl https://pokeapi.co/api/v2/pokemon | less
+ 9412  curl https://pokeapi.co/api/v2/pokemon
+ 9413  curl https://pokeapi.co/api/v2/pokemon | jq
+ 9530  curl localhost:4000
