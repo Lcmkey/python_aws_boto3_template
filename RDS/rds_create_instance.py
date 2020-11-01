@@ -6,6 +6,7 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
+DB_IDENTIFIER = os.environ.get("DB_IDENTIFIER")
 RDS_DB_USER = os.environ.get("RDS_DB_USER")
 RDS_DB_PASSWORD = os.environ.get("RDS_DB_PASSWORD")
 RDS_DB_NAME = os.environ.get("RDS_DB_NAME")
@@ -13,11 +14,10 @@ RDS_SG_ID = os.environ.get("RDS_SG_ID")
 
 
 def main():
-    db_identifier = 'rds-demo-sam'
     rds = boto3.client('rds')
 
     try:
-        rds.create_db_instance(DBInstanceIdentifier=db_identifier,
+        rds.create_db_instance(DBInstanceIdentifier=DB_IDENTIFIER,
                                AllocatedStorage=200,
                                DBName=RDS_DB_NAME,
                                Engine='MySQL',
@@ -31,19 +31,19 @@ def main():
                                VpcSecurityGroupIds=[RDS_SG_ID],
                                DBInstanceClass='db.t3.small',
                                Tags=[{'Key': 'MyTag', 'Value': 'TagValue'}])
-        print('Starting RDS instance with ID: %s' % db_identifier)
+        print('Starting RDS instance with ID: %s' % DB_IDENTIFIER)
     except botocore.exceptions.ClientError as e:
         # if 'DBInstanceAlreadyExists' in e.response.message:
         if e.response['Error']['Code'] == 'EntityAlreadyExists':
             print('DB instance %s exists already, continuing to poll ...' %
-                  db_identifier)
+                  DB_IDENTIFIER)
         else:
             raise
 
     running = True
     while running:
         response = rds.describe_db_instances(
-            DBInstanceIdentifier=db_identifier)
+            DBInstanceIdentifier=DB_IDENTIFIER)
 
         db_instances = response['DBInstances']
         if len(db_instances) != 1:
